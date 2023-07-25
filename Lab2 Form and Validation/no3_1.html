@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>HTML From Exercise</title>
+
+</head>
+
+<style>
+    table,td{
+        border: 1px solid black;
+        
+        
+    }
+    table{
+        border-spacing: 1px;
+    }
+</style>
+
+<body>
+    <h1>เข้าสู่ระบบ</h1>
+    <form action="no3_2.html" method="get">
+        <table>
+            <tr>
+                <td>
+                    <label>Username:</label>
+                </td>
+                <td>
+                    <input 
+                    type="text" 
+                    name="Username" >
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label>Password:</label>
+                </td>
+                <td>
+                    <input 
+                    type="password" 
+                    name="password" >
+                </td>
+            </tr>
+
+
+            <tr>
+                <td colspan="2">
+                    <label>กรุณาพิมพ์ตามตัวเลขที่ปรากฎ:</label> <br>
+                    <label>1559</label> <br>
+
+                    <input 
+                    type="text" 
+                    maxlength="4"
+                    pattern="1559">
+                </td>
+            </tr>
+    
+            
+        </table>
+
+        <br>
+
+        <button 
+            type="submit"
+            value="Login">
+            <img 
+                src="img\no1.png" 
+                alt="button"
+                width="50px">
+
+        </button>
+    </form>
+</body>
+</html>

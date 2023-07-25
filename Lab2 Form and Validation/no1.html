@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <p><label>1. ชื่อเต็ม/ย่อของสาขาวิชา</label></p>
+            <input 
+                type="text" 
+                name="name"
+                pattern="[A-Za-z]+">
+        </fieldset>
+
+        <br> 
+        
+        <fieldset>
+            <p><label>2. จำนวนเงินที่จะโอน</label></p>
+            <input 
+                type="text" 
+                pattern="[0-9]+"> บาท    
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>3. อาหารที่ชื่นชอบ 5 ชนิดที่ชื่นชอบจากมากไปน้อย</label></p>
+            1. <input 
+                type="text" 
+                pattern="[A-Za-zก-๏]+"> <br>
+            2. <input 
+                type="text" 
+                pattern="[A-Za-zก-๏]+"> <br>
+            3. <input 
+                type="text" 
+                pattern="[A-Za-zก-๏]+"> <br>
+            4. <input 
+                type="text" 
+                pattern="[A-Za-zก-๏]+"> <br>
+            5. <input 
+                type="text" 
+                pattern="[A-Za-zก-๏]+">     
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <p><label>4. ค่าไฟฟ้า 3 เดือนที่ผ่านมา</label></p>
+            <label>เดือนที่ 1 </label> 
+            <input 
+                type="text"
+                pattern="[0-9]+"> บาท  <br>
+            
+            <label>เดือนที่ 2 </label> 
+            <input 
+                type="text"
+                pattern="[0-9]+"> บาท   <br>
+             
+            <label>เดือนที่ 3 </label> 
+            <input 
+                type="text"
+                pattern="[0-9]+"> บาท   <br>    
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>5. รหัสบัตรประชาชน</label></p>
+            <input 
+                type="text" 
+                pattern="[0-9]{13}"
+                maxlength="13">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>6. ความพึงพอใจของหนังสือเล่มนี้</label></p>
+            <input type="radio" name="rate"> มากที่สุด   <br>
+            <input type="radio" name="rate"> มาก      <br>
+            <input type="radio" name="rate"> ปานกลาง  <br>
+            <input type="radio" name="rate"> น้อย     <br>
+            <input type="radio" name="rate"> น้อยที่สุด <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>7. อาการป่วย</label></p>
+            <textarea name="sick"  cols="60" rows="10"></textarea>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>8. ในช่วง 3 เดือนที่ผ่านมา เคยได้รับวัคซีนหรือไม่</label></p>
+            <input type="radio" name="vacine"> เคย   <br>
+            <input type="radio" name="vacine"> ไม่เคย      <br>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>9. รหัสผ่าน</label></p>
+            <input 
+                type="password" 
+                name="password" 
+                pattern="[A-Za-z0-9]+">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <p><label>10. เวลาเริ่มเข้าเรียนและสิ้นสุดการเรียน</label></p>
+            <label>เริ่มเข้าเรียน</label>
+            <input 
+                type="time" 
+                name="starttime" >  <br>
+
+            <label>สิ้นสุดการเรียน</label>
+            <input 
+                type="time" 
+                name="endtime" >
+            
+        </fieldset>
+
+        <br>
+        
+        <fieldset>
+            <p><label>11. วันเวลาที่ต้องไปพบแพทย์</label></p>
+            <label>วันที่</label>
+            <input 
+                type="date" >  <br>
+
+            <label>เวลา</label>
+            <input 
+                type="time"  >
+        </fieldset>
+
+    </form>
+</body>
+</html>

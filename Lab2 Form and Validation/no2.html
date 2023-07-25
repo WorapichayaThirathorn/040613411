@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <h2>แบบฟอร์มจองทัวร์</h1>
+        <fieldset>
+            <legend>ข้อมูลทั่วไป</legend>
+
+            <p><label>ชื่อ-สกุล:</label></p> 
+            <input 
+                type="text"
+                placeholder="กรอกชื่อ-สกุล"
+                pattern="[A-Za-zก-๏]+[A-Za-zก-๏\s]+"
+                required>*
+            
+
+
+            <p><label>Email:</label></p> 
+            <input 
+                type="email"
+                pattern="[A-Za-z0-9]+@[A-Za-z0-9]+.[a-z]{2,4}$"
+                required>*
+           
+
+            <p><label>โทรศัพท์:</label></p> 
+            <input 
+                type="tel"
+                value="+66"
+                pattern="(+66|0)(\d[0-9]*9)"
+                required>*
+        
+
+            <p><label>ที่อยู่:</label></p> 
+            <textarea 
+                name="address" 
+                id="address" 
+                cols="30" 
+                rows="4">
+            </textarea>
+            
+
+            <p><label>รหัสไปรษณีย์:</label>
+            <input 
+                type="text"
+                pattern="[0-9]{5}" 
+                size="5"
+                maxlength="5">
+            </p>
+
+            <p><label>รูปผู้จอง:</label>
+                <input 
+                    type="file"
+                    id="my file"
+                    name="my file"
+                    >        
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>ข้อมูลเข้าสู่ระบบ</legend>
+
+            <p><label>Username:</label></p> 
+            <input 
+                type="text"
+                pattern="[A-Za-z0-9_]+"
+                minlength="8"> <br>
+            <i>ประกอบด้วยตัวเลข ตัวอักษร หรือ_ตั้งแต่ 8 ตัวขึ้นไป</i>
+
+
+            <p><label>Password:</label></p> 
+            <input 
+                type="password"
+                pattern="[A-Za-z0-9_!.-+*@]+"
+                minlength="8"> <br>
+            <i>ประกอบด้วยอักขระอะไรก็ได้ 8 ตัวขึ้นไป</i>
+            
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>ข้อมูลทัวร์ที่ต้องการ</legend>
+            <label>แพคเก็จทัวร์:</label>
+                <select name="countries">
+                    <option value="">--select--</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Netherlands">Netherlands</option>
+                </select>
+            
+
+            <br>
+
+            <label>วันที่เดินทาง:</label>
+            <input type="date" name="" id="">
+
+            <br>
+
+            <label>จำนวนผู้เดินทาง:</label>
+            <input 
+                type="number"
+                min="1"
+                max="10">
+
+            <br>
+
+            <label>เน้นการท่องเที่ยวแบบใด?</label>  <br>
+                <input 
+                    type="checkbox" 
+                    name="ชอปปิ้ง" > ชอปปิ้ง <br>
+
+                <input 
+                    type="checkbox" 
+                    name="ธรรมชาติ" > ธรรมชาติ <br>
+                <input 
+                    type="checkbox" 
+                    name="ทะเล" > ทะเล
+            
+        </fieldset>
+
+        <label>ยอมรับเงื่อนไขและข้อตกลง </label>
+            <input 
+                type="radio" 
+                name="check" 
+                value="yes" 
+                checked="checked">I agree
+
+            <input 
+                type="radio" 
+                name="check" 
+                value="no" >I diagree
+            <input type="button" value="จอง">
+
+       
+        
+            
+            
+
+            
+        
+
+    </form>
+    
+
+    
+</body>
+</html>
