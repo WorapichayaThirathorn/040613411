@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <style>
+        .green-text{
+            color: green;
+        }
+        .red-text{
+            color: red;
+        }
+
+        
+    </style>
+
+    <script>
+        function checkPassword() {
+            var password1 = document.getElementById('pass1').value; 
+            var password2 = document.getElementById('pass2').value;
+            var check = document.getElementById('errormsg'); 
+
+            if (password1 == password2){
+                check.classList.add('green-text');
+                check.classList.remove('red-text');
+                document.getElementById("errormsg").innerHTML = "Correct";
+                
+            } 
+            else{ 
+                check.classList.add('red-text');
+                check.classList.remove('green-text');
+                document.getElementById("errormsg").innerHTML = "InCorrect";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Register</h1>
+    Username: <input type="text"><br>
+    Password: <input type="text" id="pass1"><br>
+    Re-type Password: <input type="text" id="pass2"><br>
+    <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div>
+</body>
+
+</html>

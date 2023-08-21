@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <style>
+        .green-text{
+            color: green;
+        }
+
+    </style>
+    <script>
+        function changecolor(elementId) {
+           var change = document.getElementById(elementId)
+
+            if (change.value !== '') {
+                change.classList.add('green-text');
+            } 
+            else {
+                change.classList.remove('green-text');
+            }
+            
+        }
+    </script>
+</head>
+
+<body>
+    Name: <input type="text" id="name" onblur="changecolor('name')"><br>
+    Age: <input type="text" id="age" onblur="changecolor('age')"><br>
+    Birthdate: <input type="text" id="birth" onblur="changecolor('birth')"><br>
+    <!-- <input type="submit" onclick="checkPassword()">
+    <div id="errormsg"></div> -->
+</body>
+
+</html>
